@@ -1,23 +1,23 @@
 :host {
-  border-color: #e1e1e1;
-  border-style: solid;
-  border-width: 0 0 1px;
+
   display: block;
-  height: 48px;
-  padding: 0 16px;
+  height: calc(100vh - 48px);
+  /*padding: 0 16px;*/
 }
 
 nav a {
   color: #8f8f8f;
-  width: 200px;
+  width: 100%;
   line-height: 48px;
   margin-right: 20px;
+  padding-left: 20px;
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
+  border-bottom: 1px solid #3a3939
 }
 
-nav a.router-link-active {
+nav a.router-link-active, nav a:hover {
   color: #106cc8;
 }
 
@@ -28,6 +28,8 @@ nav{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border-right: 1px solid #3a3939;/*#ddd;*/
+  height: 100%;
 }
 
 .titmicuenta{
