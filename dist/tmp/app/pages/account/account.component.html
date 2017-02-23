@@ -1,15 +1,51 @@
-<div class="">
-    <div style="display: flex" class="row btn-group btn-group-justified" role="group" aria-label="...">
-        <div class="col-lg-4 btn-group" role="group">
-            <button type="button" class="estilobotones btn btn-default">Crear nuevo evento</button>
+<div style="transition: all 0.2s;">
+    <div class="">
+        <div style="display: flex; transition: all 0.2s;" class="row btn-group btn-group-justified" role="group" aria-label="...">
+            <div style="transition: all 0.2s;" class="col-lg-4 btn-group" role="group">
+                <button style="transition: all 0.2s; border-radius: 5px" type="button" class="estilobotones btn btn-default mouseenter" (click)="newEvent">Crear nuevo evento</button>
+            </div>
+            <div class="col-lg-4 btn-group" role="group">
+                <button style=" border-radius: 5px" type="button" class="estilobotones btn btn-default mouseenter">Mis suscripciones</button>
+            </div>
+            <div class="col-lg-4 btn-group" role="group">
+                <button style=" border-radius: 5px" type="button" class="estilobotones btn btn-default mouseenter">Ajustes</button>
+            </div>
         </div>
-        <div class="col-lg-4 btn-group" role="group">
-            <button type="button" class="estilobotones btn btn-default">Mis suscripciones</button>
-        </div>
-        <div class="col-lg-4 btn-group" role="group">
-            <button type="button" class="estilobotones btn btn-default">Ajustes</button>
+    </div>
+
+    <div style="border: solid 1px black"></div>
+
+    <div style="margin-top: 15px;">
+        <div class="panel panel-default">
+            <div style="border: solid darkgray 3px; border-radius: 5px" class="row panel-body">
+
+                <div class="form-group">
+                    <label class="control-label flex col-lg-2"><h4>Titulo del evento</h4></label>
+                    <input type="text" placeholder="Titulo">
+                </div>
+
+                <div class="form-group">
+                <label class="control-label flex col-lg-2"><h4>Descripcion del Evento</h4></label>
+                <input type="text" placeholder="Descripción...">
+            </div>
+
+                <<div class="dropdown col-lg-2">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Tipo de Evento
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Discomóbil</a></li>
+                    <li><a href="#">Orquesta</a></li>
+                    <li><a href="#">Orquesta/Discomobil</a></li>
+                    <li><a href="#">Evento cultural</a></li>
+                    <li><a href="#">Otros</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+            </div>
         </div>
     </div>
 </div>
-
-<div style="border: solid 1px black"></div>
